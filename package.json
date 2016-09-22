@@ -1,4 +1,28 @@
 {
-  "name": "application-name",
-  "version": "0.0.1"
+  "name": "mean-maps",
+  "version": "1.0.0",
+  "description": "MEAN STACK app using GOOGLE Maps API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nony1992/GOOGLE-Maps-MEAN-app.git"
+  },
+  "author": "johnny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nony1992/GOOGLE-Maps-MEAN-app/issues"
+  },
+  "homepage": "https://github.com/nony1992/GOOGLE-Maps-MEAN-app#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.1.9",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.6.1",
+    "morgan": "^1.7.0"
+  }
 }

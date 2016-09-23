@@ -12,6 +12,7 @@ var app            = express();
 
 mongoose.connect("mongodb://localhost/MeanMapApp");
 
+
 //Logging and Parsing
 
 app.use(express.static(__dirname + '/public'));
@@ -23,12 +24,12 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'}));
 app.use(methodOverride());
 
 
-
 //Routes
 
-
+require('./app/routes.js')(app);
 
 
 //Listen
+
 app.listen(port);
 console.log('Magic happens on port: ' + port);
